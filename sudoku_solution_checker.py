@@ -33,8 +33,6 @@ def done_or_not(board): #board[i][j]
 				for y in range(j-1,j+2):
 					if board[x][y] not in seen:
 						seen.add(board[x][y])
-						print(seen)
 					else:
 						return "Try again!"
-					print(board[x][y])
 	return "Finished!"
